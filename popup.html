@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 350px; padding: 15px; font-family: sans-serif; }
+    .profile-card { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+    input { width: 100%; margin-bottom: 8px; box-sizing: border-box; }
+    button { cursor: pointer; padding: 8px; width: 100%; background: #007bff; color: white; border: none; border-radius: 4px; }
+    .fill-btn { background: #28a745; margin-bottom: 5px; }
+    .delete-btn { background: #dc3545; font-size: 11px; margin-top: 5px; }
+    h4 { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <h3>Family Reunion Autofill</h3>
+  
+  <!-- This is where saved profiles will appear -->
+  <div id="profileList"></div>
+  
+  <hr>
+  
+  <div style="background: #f4f4f4; padding: 10px; border-radius: 5px;">
+    <h4>Add New Person</h4>
+    <input id="p_name" placeholder="Profile Name (e.g. Brother)">
+    <input id="f_last" placeholder="Last Name">
+    <input id="f_first" placeholder="First Name">
+    <input id="f_email" placeholder="Email">
+    <input id="f_passport" placeholder="Passport Number">
+    <input id="f_dob" placeholder="Date of Birth (DD/MM/YYYY)">
+    <input id="f_phone" placeholder="Phone Number">
+    <input id="f_nat" placeholder="Nationality">
+    <button id="saveBtn">Save Profile</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
