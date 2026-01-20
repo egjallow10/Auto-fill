@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Personal Autofiller",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab"],
+  "action": { "default_popup": "popup.html" },
+  "content_scripts": [{
+    "matches": ["https://service2.diplo.de/rktermin/extern/appointment_showForm.do?locationCode=daka&realmId=566&categoryId=2976"],
+    "js": ["content.js"]
+  }]
+}
